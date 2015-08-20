@@ -16,7 +16,7 @@ LD = g++
 WINDRES = windres
 
 INC =  -Iinclude -I/usr/include/rhash -I/usr/include/jsoncpp
-CFLAGS =  -std=c++11 -Wall -fexceptions -D_FILE_OFFSET_BITS=64
+CFLAGS =  -std=c++11 -Wall -fexceptions -D_FILE_OFFSET_BITS=64 -D_GLIBCXX_USE_C99=1
 RESINC = 
 LIBDIR = 
 LIB =  -lcurl -loauth -ljsoncpp -lhtmlcxx -lboost_system -lboost_filesystem -lboost_regex -lboost_program_options -lboost_date_time -ltinyxml -lrhash
